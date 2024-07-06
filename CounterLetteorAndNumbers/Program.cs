@@ -1,6 +1,6 @@
 ﻿using CounterLetteorAndNumber.Service;
 
-namespace CounterLetteorAndNumber
+namespace CounterLetterAndNumber
 {
     internal class Program
     {
@@ -11,7 +11,7 @@ namespace CounterLetteorAndNumber
             {
                 Calculate();
 
-                Finder("Do you want continue? (" + ")");
+                Finder("Do you want continue? if yes + ");
                 isContinue = Console.ReadLine();
 
             } 
@@ -27,6 +27,7 @@ namespace CounterLetteorAndNumber
                   Finder("The text have Letter and Number:");
                   Finder($"Counter number of letters: {CounterServices.GenerateDigits(text)}");
                   Finder($"Counter number of numbers: {CounterServices.GenerateLetters(text)}");
+                  Finder($"Counter other simbols:     {CounterServices.GenerateAll(text)}");
 
               }
               static void Finder(string text)  

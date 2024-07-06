@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CounterLetteorAndNumber.Service
+﻿namespace CounterLetteorAndNumber.Service
 {
     internal class CounterServices
     {
@@ -28,6 +22,18 @@ namespace CounterLetteorAndNumber.Service
             foreach (char c in text)
             {
                 if (char.IsLetter(c))
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+        public static int GenerateAll(string text)
+        {
+            int count = 0;
+            foreach (char c in text)
+            {
+                if (!char.IsLetterOrDigit(c))
                 {
                     count++;
                 }
