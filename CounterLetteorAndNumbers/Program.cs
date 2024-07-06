@@ -29,7 +29,7 @@ namespace CounterLetteorAndNumber
                   Finder($"Counter number of numbers: {CounterServices.GenerateLetters(text)}");
 
               }
-              static void Finder(string text)
+              static void Finder(string text)  
               {
                  Console.WriteLine(text);
               }
